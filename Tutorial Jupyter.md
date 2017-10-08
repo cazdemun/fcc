@@ -29,9 +29,9 @@ markdown:
 CloudNine incluye Python 2.7 por defecto, pero es necesario instalar Python 3
 
 <pre>
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-chmod a+x Miniconda3-latest-Linux-x86_64.sh
-./Miniconda3-latest-Linux-x86_64.sh
+$ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+$ chmod a+x Miniconda3-latest-Linux-x86_64.sh
+$ ./Miniconda3-latest-Linux-x86_64.sh
 </pre>
 
 Aceptar todo y abrir una nueva terminal
@@ -41,8 +41,8 @@ Aceptar todo y abrir una nueva terminal
 No probar esto todavía.
 
 <pre> 
-conda create -n py3 python=3 jupyter
-source activate py3
+$ conda create -n py3 python=3 jupyter
+$ source activate py3
 </pre>
 
 ## 2. Instalar y ejecutar Jupyter Notebook
@@ -50,8 +50,8 @@ source activate py3
 Saltarse la primera línea en caso de haber creado el environment.
 
 <pre>
-conda install jupyter
-jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+$ conda install jupyter
+$ jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 </pre>
 
 ### Notas
@@ -66,7 +66,7 @@ jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 2. Seleccionar 'Show Home in Favorites' y 'Show Hidden Files'
 3. Agregar al final del archivo '.bash_aliases':
 
-<pre> alias jnmb='jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser' </pre>
+<pre>$ alias jnmb='jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser' </pre>
 
 Abrir una nueva terminal. Ahora para ejecutar Jupyter solo es necesario escribir jnmb en la consola.
 
@@ -77,5 +77,5 @@ Jupyter a veces presenta problemas de conexión, aumentar la RAM a 1 gb y actual
 ## 3. Instalar matplotlib
 
 <pre>
-pip install matplotlib
+$ pip install matplotlib
 </pre>
