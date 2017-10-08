@@ -40,7 +40,7 @@ Aceptar todo y abrir una nueva terminal
 
 No probar esto todavía.
 
-<pre> 
+<pre>
 $ conda create -n py3 python=3 jupyter
 $ source activate py3
 </pre>
@@ -66,7 +66,7 @@ $ jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 2. Seleccionar 'Show Home in Favorites' y 'Show Hidden Files'
 3. Agregar al final del archivo '.bash_aliases':
 
-<pre>$ alias jnmb='jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser' </pre>
+<pre>alias jnmb='jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser' </pre>
 
 Abrir una nueva terminal. Ahora para ejecutar Jupyter solo es necesario escribir jnmb en la consola.
 
