@@ -10,6 +10,17 @@ Instalando matplotlib: https://stackoverflow.com/questions/43437884/jupyter-note
 
 mini-conda: https://conda.io/miniconda.html
 
+latex: 
+
+1. https://stackoverflow.com/questions/13208286/how-to-write-latex-in-ipython-notebook
+2. http://reu.dimacs.rutgers.edu/Symbols.pdf
+3. http://nbviewer.jupyter.org/github/ipython/ipython/blob/1.x/examples/notebooks/Part%205%20-%20Rich%20Display%20System.ipynb
+
+markdown:
+
+1. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+2. https://www.tablesgenerator.com/markdown_tables
+
 ## 1. Instalar mini-conda
 
 <pre>
