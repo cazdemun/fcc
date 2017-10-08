@@ -4,11 +4,14 @@
 
 Video Principal: https://www.youtube.com/watch?v=b7CbZPwEjVw <br>
 
-Jupyter: http://jupyter.readthedocs.io/en/latest/install.html <br>
+Jupyter: 
+
+1. http://jupyter.readthedocs.io/en/latest/install.html
+2. https://stackoverflow.com/questions/31989995/how-can-i-safely-install-jupyter-ipython-4-over-a-conda-installation 
 
 Instalando matplotlib: https://stackoverflow.com/questions/43437884/jupyter-notebook-import-error-no-module-named-matplotlib <br>
 
-mini-conda: https://conda.io/miniconda.html
+mini-conda: https://conda.io/miniconda.html <br>
 
 latex: 
 
@@ -21,10 +24,63 @@ markdown:
 1. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 2. https://www.tablesgenerator.com/markdown_tables
 
-## 1. Instalar mini-conda
+## 1. Instalar mini-conda y Python 3
+
+CloudNine incluye Python 2.7 por defecto, pero es necesario instalar Python 3
 
 <pre>
-git test
-git mas test
-git mas y mas test --test
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod a+x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+</pre>
+
+Aceptar todo y abrir una nueva terminal
+
+## 1.1 Creando un environment
+
+Todavía no prueben esto
+
+<pre> 
+conda create -n py3 python=3 jupyter
+source activate py3
+</pre>
+
+## 2. Instalar y ejecutar Jupyter Notebook
+
 <pre>
+conda install jupyter
+</pre>
+
+Saltarse la línea anterior en caso de haber creado el environment
+
+<pre>
+jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+</pre>
+
+### Notas
+
+* Abrir el link que sale al final. 
+* Se debe escribir el último comando cada vez que se inicia el workspace de C9.
+* En caso de haber creado un environment en Python es necesario acceder a este primero.
+
+## 2.1 Crear un alias
+
+1. Dar click al engranaje situado en la esquina superior derecha del árbol de directorios
+2. Seleccionar 'Show Home in Favorites' y 'Show Hidden Files'
+3. Agregar 
+
+<pre> alias jnmb='jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser' </pre>
+
+Al final del archivo .bash_aliases
+
+Ahora para ejecutar Jupyter solo es necesario escribir jnmb en la consola. Es necesario abrir una nueva terminal.
+
+### Notas
+
+Jupyter a veces presenta problemas de conexión, aumentar la RAM a 1 gb y actualizar suele solucionarlo.
+
+## 3. Instalar matplotlib
+
+<pre>
+pip install matplotlib
+</pre>
