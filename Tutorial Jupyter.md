@@ -38,7 +38,7 @@ Aceptar todo y abrir una nueva terminal
 
 ## 1.1 Creando un environment
 
-Todavía no prueben esto
+No probar esto todavía.
 
 <pre> 
 conda create -n py3 python=3 jupyter
@@ -47,37 +47,32 @@ source activate py3
 
 ## 2. Instalar y ejecutar Jupyter Notebook
 
+Saltarse la primera línea en caso de haber creado el environment.
+
 <pre>
 conda install jupyter
-</pre>
-
-Saltarse la línea anterior en caso de haber creado el environment
-
-<pre>
 jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 </pre>
 
 ### Notas
 
 * Abrir el link que sale al final. 
-* Se debe escribir el último comando cada vez que se inicia el workspace de C9.
+* Se debe escribir el último comando cada vez que se inicia el workspace en C9.
 * En caso de haber creado un environment en Python es necesario acceder a este primero.
 
 ## 2.1 Crear un alias
 
 1. Dar click al engranaje situado en la esquina superior derecha del árbol de directorios
 2. Seleccionar 'Show Home in Favorites' y 'Show Hidden Files'
-3. Agregar 
+3. Agregar al final del archivo '.bash_aliases':
 
 <pre> alias jnmb='jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser' </pre>
 
-Al final del archivo .bash_aliases
-
-Ahora para ejecutar Jupyter solo es necesario escribir jnmb en la consola. Es necesario abrir una nueva terminal.
+Abrir una nueva terminal. Ahora para ejecutar Jupyter solo es necesario escribir jnmb en la consola.
 
 ### Notas
 
-Jupyter a veces presenta problemas de conexión, aumentar la RAM a 1 gb y actualizar suele solucionarlo.
+Jupyter a veces presenta problemas de conexión, aumentar la RAM a 1 gb y actualizar donde se pueda.
 
 ## 3. Instalar matplotlib
 
