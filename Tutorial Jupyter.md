@@ -18,6 +18,7 @@ latex:
 1. https://stackoverflow.com/questions/13208286/how-to-write-latex-in-ipython-notebook
 2. http://reu.dimacs.rutgers.edu/Symbols.pdf
 3. http://nbviewer.jupyter.org/github/ipython/ipython/blob/1.x/examples/notebooks/Part%205%20-%20Rich%20Display%20System.ipynb
+4. https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
 
 markdown:
 
